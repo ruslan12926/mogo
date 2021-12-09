@@ -1,0 +1,407 @@
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+
+	font-size: 	15px;
+	line-height: 1.6;
+	color: #333;
+	height: 3000px;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;	
+}
+li{
+	list-style-type: none;
+}
+
+
+/* Container */
+
+.container{
+	width: 	100%;
+	max-width: 1100px;	
+	margin: 0 auto;
+	color: #fff;
+	padding-top: 20px;
+}
+.container ul{
+	float: right; 
+
+}
+.container ul li{
+	display: inline;
+	margin-left: 17px;
+	margin-right: 17px;
+	padding-bottom: 5px;
+	position: relative;
+	top: -45px;
+	font-weight: 400;
+}
+.container ul li:hover{
+	cursor: pointer;
+	color: #f7cb88;
+	border-bottom: 1px solid #f7cb88;
+	transition: .5s;
+}
+.container ul li:not(:hover){
+	transition: 1s;
+}
+
+.img_shop{
+	position: relative;
+	top: 2px; 
+}
+.img_search{
+	position: relative;
+	top: 4px; 
+}
+/* Intro */
+
+.intro{
+	width: 100%;	
+	height: 100vh;	
+
+	background: url("../img/images/intro.jpg") center no-repeat;
+}
+.subSlogan{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 52px;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.supSlogan{
+	margin: 0 auto;
+	text-align: center;
+	max-width: 550px;
+	margin-top: 10px;
+	font-size: 90px;
+	line-height: 90px;
+}
+
+.supSlogan_line{
+	width: 60px;
+	border-bottom: 3px solid #f38181;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.container_btn{
+	border: 4px solid #fff;
+	width: 140px;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-top: 6px;
+	border-radius: 7px;
+	filter: drop-shadow(1px 10px 6px black)
+}
+
+.container_btn:hover{
+	cursor: pointer;
+	background: #f7cb88;
+	transition: 1s;
+	color: #333;
+	border-color: #333;
+	filter: drop-shadow(1px 10px 50px black)
+}
+
+.container_btn:not(:hover){
+	transition: 1s;
+
+}
+.intro_footer ul{
+	display: flex;
+	justify-content: center;
+}
+.intro_footer ul li{
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-right: 100px;
+	padding-top: 15px;
+	position: relative;
+	top: 80px;
+	font-weight: 400;
+	border-top: 3px solid #fff;
+	color: #fff;
+
+
+}
+
+.intro_footer ul li:hover{
+	  border-top: 3px solid #f38181; 
+	  transition: 1s;
+	  cursor: pointer;
+}
+
+.intro_footer ul li:not(:hover){
+	transition: 1s;
+}
+/* END NAV */
+
+
+
+
+
+/* MAIN */
+
+
+
+main{
+	margin: 0 auto;
+}
+
+/* ABOUT US */
+
+.about_us{
+}
+.aboutSub{
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 400;
+	font-size: 28px;
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+}
+
+.aboutSup{
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+.aboutSup_line{
+	width: 60px;
+	border-bottom: 3px solid #9d4edd;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.about_info{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #b3b3b3;
+	width: 970px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 15px;
+}
+
+/* ABOUT IMG */
+
+.about_img img{
+	width: 280px;
+	height: 180px;
+	margin-left: 42px;
+	margin-right: 42px;
+}
+
+.about_img{
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+.aboutDiv_img1 img{
+	border-bottom: 5px solid #fff; 
+	border-radius: 10px 10px 10px 100px;
+}
+.aboutDiv_img1 img:hover{
+	border-bottom: 5px solid #95e1d3; 
+	border-radius: 10px 10px 10px 10px;
+}
+.img_1{
+	position: absolute;
+}
+.img_1background{
+	position: relative;
+	opacity: 0;
+}
+.img_1background:hover{
+	opacity: 0.6;
+	transition: 1s;
+}
+.img_1background:not(:hover){
+	transition: 1s;
+}
+
+
+
+.aboutDiv_img2 img{
+	border-bottom: 5px solid #fff; 
+	border-radius: 10px 10px 100px 100px;	 
+}
+.aboutDiv_img2 img:hover{
+	border-bottom: 5px solid #95e1d3; 
+	border-radius: 10px 10px 10px 10px;
+}
+
+.img_2{
+	z-index: 0;
+	position: absolute;
+}
+.img_2background{
+	position: relative;
+	opacity: 0.0;
+}
+.img_2background:hover{
+	opacity: 0.6;
+	transition: 1s;
+}
+.img_2background:not(:hover){
+	transition: 1s;
+}
+
+
+
+.aboutDiv_img3 img{
+	border-bottom: 5px solid #fff; 
+	border-radius: 10px 10px 100px 10px;
+}
+.aboutDiv_img3 img:hover{
+	border-bottom: 5px solid #95e1d3; 
+	border-radius: 10px 10px 10px 10px;
+}
+.img_3{
+	z-index: 0;
+	position: absolute;
+}
+.img_3background{
+	position: relative;
+	opacity: 0.0;
+}
+.img_3background:hover{
+	opacity: 0.6;
+	transition: 1s;
+}
+.img_3background:not(:hover){
+	transition: 1s;
+}
+
+
+
+/* FACTS */
+.facts{
+	background: #95e1d3 ;
+	height: 270px;
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.facts ul{
+	display: flex;
+	margin-right: 35px;
+}
+
+.facts ul li{
+	float: left;
+	margin-top: 35px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	width: 200px;
+	height: 150px;
+	margin-left: 10px;
+}
+
+.facts ul strong{
+	font-size: 72px;
+}
+
+.facts ul li:hover{
+	border-left: 1px solid #f38181;
+	border-right: 1px solid #f38181;
+	transition: 1s;
+}
+
+.facts ul li:not(:hover){
+	transition: 1s;
+}
+
+
+
+/* SETVICES */
+
+.services_slogan{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.servicesSub{
+	font-family: 'Kaushan Script', cursive;	
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.servicesSup{
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.services_supLine{
+	width: 60px;
+	border-bottom: 3px solid #95e1d3;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.PWC_services{
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+}
+
+.PWC_services div{
+	width: 350px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+}
+
+.PWC_services div h6{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+
+.PWC_services div p{
+	font-size: 15px;
+	text-align: center;
+}
+
+.PWC_services div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;	
+    margin-top: 10px;
+}
+
+.photography_services{
+	border-bottom: 3px solid #95e1d3;
+	border-right: 3px solid #95e1d3;
+}
+.web_services{
+	border-bottom: 3px solid #95e1d3;
+}
+
+.creativity_services{
+	border-bottom: 3px solid #95e1d3;
+	border-left: 3px solid #95e1d3	
+}
